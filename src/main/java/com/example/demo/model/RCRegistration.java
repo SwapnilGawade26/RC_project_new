@@ -20,7 +20,7 @@ public class RCRegistration {
 	
 	private String city;
 	
-	private String registrationDate;
+	private Date registrationDate;
 	
 	@OneToOne
 	private vehicalType vehicalType;
@@ -28,7 +28,7 @@ public class RCRegistration {
 	private String color;
 
 
-	public RCRegistration(Long id, String rCNo, String ownerName, String city, String registrationDate,
+	public RCRegistration(Long id, String rCNo, String ownerName, String city, Date registrationDate,
 			com.example.demo.model.vehicalType vehicalType, String color) {
 		super();
 		this.id = id;
@@ -41,10 +41,18 @@ public class RCRegistration {
 	}
 
 	
-	public RCRegistration(String string, String string2, String string3, Date date,
-			com.example.demo.model.vehicalType xl6, String string4) {
-		// TODO Auto-generated constructor stub
+	public RCRegistration() {}
+	public RCRegistration(String rCNo, String ownerName, String city, Date registrationDate,
+			com.example.demo.model.vehicalType vehicalType, String color) {
+		super();
+		this.rCNo = rCNo;
+		this.ownerName = ownerName;
+		this.city = city;
+		this.registrationDate = registrationDate;
+		this.vehicalType = vehicalType;
+		this.color = color;
 	}
+
 
 
 	public Long getId() {
@@ -79,13 +87,19 @@ public class RCRegistration {
 		this.city = city;
 	}
 
-	public String getRegistrationDate() {
+	
+
+	public Date getRegistrationDate() {
 		return registrationDate;
 	}
 
-	public void setRegistrationDate(String registrationDate) {
+
+
+	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
 	}
+
+
 
 	public vehicalType getVehicalType() {
 		return vehicalType;

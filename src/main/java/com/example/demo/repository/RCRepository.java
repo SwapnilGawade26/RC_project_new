@@ -6,4 +6,7 @@ import com.example.demo.model.RCRegistration;
 
 public interface RCRepository extends JpaRepository<RCRegistration, Long> {
 
+	public RCRegistration findByrCNoIgnoreCase(String rcNo);
+
+	public RCRegistration findByOwnerNameIgnoreCase(String ownerName);
 }

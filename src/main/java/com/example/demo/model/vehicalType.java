@@ -16,7 +16,7 @@ public class vehicalType {
 	private String model;
 	
 	
-
+	public vehicalType() {}
 	public vehicalType(String companyName, String model) {
 		super();
 		

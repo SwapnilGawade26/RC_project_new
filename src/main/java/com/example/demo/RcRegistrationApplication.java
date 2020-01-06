@@ -39,7 +39,7 @@ public class RcRegistrationApplication {
 		
 		RCRegistration mh42142020=new RCRegistration("mh42142020", "Swap", "BMT", new Date(), xl6, "Nexa Blue");
 		RCRegistration mh12142020=new RCRegistration("mh12142020", "Sam", "PUNE", new Date(), nexon, "Light Gray");
-		RCRegistration mh11142020=new RCRegistration("mh11142020", "Raj", "SATARA", new Date(), xl6, "White");
+		RCRegistration mh11142020=new RCRegistration("mh11142020", "Raj", "SATARA", new Date(), venue, "White");
 
 		RCRepository.save(mh42142020);
 		RCRepository.save(mh12142020);
